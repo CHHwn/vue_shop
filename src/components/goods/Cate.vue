@@ -52,7 +52,7 @@
           <el-input v-model="addCateForm.cat_name"></el-input>
         </el-form-item>
         <el-form-item label="父级名称: ">
-          <el-cascader expand-trigger="hover" v-model="selectedKeys" :options="parentCateList" :props="{
+          <el-cascader v-model="selectedKeys" :options="parentCateList" :props="{
               expandTrigger: 'hover',
               ...cascaderProps,
               checkStrictly: 'true'
