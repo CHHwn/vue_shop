@@ -31,7 +31,7 @@
         </template>
         <!-- 操作 -->
         <template slot="opt" slot-scope="scope">
-          <el-button size="mini" type="primary" icon="el-icon-edit" @click="showeditCateDialog(scope.row)">编辑
+          <el-button size="mini" type="primary" icon="el-icon-edit" @click="showEditCateDialog(scope.row)">编辑
           </el-button>
           <el-button size="mini" type="danger" icon="el-icon-delete" @click="removeCateById(scope.row.cat_id)">删除
           </el-button>
@@ -256,7 +256,7 @@
         this.addCateForm.cat_pid = 0
       },
       //展示编辑对话框
-      async showeditCateDialog(cateInfo) {
+      async showEditCateDialog(cateInfo) {
         this.editCateId = cateInfo.cat_id
         const {
           data: res

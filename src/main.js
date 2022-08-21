@@ -8,6 +8,14 @@ import './assets/css/global.css'
 import './assets/fonts/iconfont.css'
 import TreeTable from 'vue-table-with-tree-grid';
 
+import dayjs from 'dayjs'
+//导入富文本编辑器
+import VueQuillEditor from 'vue-quill-editor'
+//导入富文本编辑器对应样式
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+
 import axios from 'axios'
 //配置请求的根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
@@ -24,6 +32,14 @@ Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 Vue.component('tree-table', TreeTable)
+
+//将富文本编辑器注册为全局可用的组件
+Vue.use(VueQuillEditor)
+
+Vue.filter('dateFormat', function(originVal) {
+
+    return dayjs(originVal).format('YYYY-MM-DD HH:mm:ss')
+})
 
 new Vue({
     router,

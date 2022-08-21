@@ -153,20 +153,10 @@
             required: true,
             message: '请输入角色名',
             trigger: 'blur'
-          }, {
-            min: 2,
-            max: 5,
-            message: '角色名的长度在2~5个字符之间',
-            trigger: 'blur'
           }],
           roleDesc: [{
             required: true,
             message: '请输入角色描述',
-            trigger: 'blur'
-          }, {
-            min: 2,
-            max: 10,
-            message: '密码的长度在2~10个字符之间',
             trigger: 'blur'
           }]
         },
@@ -177,20 +167,10 @@
             required: true,
             message: '请输入角色名',
             trigger: 'blur'
-          }, {
-            min: 2,
-            max: 5,
-            message: '角色名的长度在2~5个字符之间',
-            trigger: 'blur'
           }],
           roleDesc: [{
             required: true,
             message: '请输入角色描述',
-            trigger: 'blur'
-          }, {
-            min: 2,
-            max: 10,
-            message: '密码的长度在2~10个字符之间',
             trigger: 'blur'
           }]
         }
