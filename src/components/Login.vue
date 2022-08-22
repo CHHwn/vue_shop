@@ -91,8 +91,10 @@
 
 <style lang="less" scoped>
   .login_container {
-    background: #2b4b6b;
     height: 100%;
+    background-image: linear-gradient(125deg, #487eb0, #40739e, #273c75, #192a56);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
   }
 
   .login_box {
@@ -122,7 +124,7 @@
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      background-color: #2b4b6b;
+      background-color: #40739e;
     }
   }
 
@@ -137,5 +139,19 @@
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
+  }
+
+  @keyframes bganimation {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
   }
 </style>

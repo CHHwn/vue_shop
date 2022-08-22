@@ -142,7 +142,7 @@
   }
 
   .toggle-button {
-    background-color: #909399;
+    background-color: #40739e;
     font-size: 10px;
     line-height: 24px;
     color: #fff;
